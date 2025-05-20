@@ -4,21 +4,30 @@ let colorName = ["AliceBlue", "AntiqueWhite", "Aqua", "Aquamarine", "Azure", "Be
 
 
 
-let userColorFind = prompt ("Enter color Name to change the Background color")
+// let userColorFind = prompt ("Enter color Name to change the Background color")
 
 
 
 
 
-    if(colorName.includes(userColorFind)){
+    // if(colorName.includes(userColorFind)){
         
-    document.body.style.backgroundColor = userColorFind;
-    document.body.innerHTML+= `<h3>Current background: ${userColorFind}</h3>`
-        let colorDisplay = document.getElementById("color");
+    // document.body.style.backgroundColor = userColorFind;
+    // document.body.innerHTML+= `<h3>Current background: ${userColorFind}</h3>`
+    //     let colorBox = document.getElementById("colorBox");
           
-    }else{
-        alert(`"${userColorFind}" Ap sirf specific color names jo key listed hain enter karsaktey hain and first letter must be Capital OR you can copy from the list without comas.`);
-    }
+    // }else{
+    //     alert(`"${userColorFind}" Ap sirf specific color names jo key listed hain enter karsaktey hain and first letter must be Capital OR you can copy from the list without comas.`);
+    // }
+// Step 1: Get the div element
+        let colorBox = document.getElementById("colorBox");
+        
+        // Step 2: Ask user for color input
+        let userColor = prompt("Enter a color name:");
+        
+        // Step 3: Change div color and display the color name
+        colorBox.style.backgroundColor = userColor;
+        colorBox.textContent = userColor;
     
 
 
